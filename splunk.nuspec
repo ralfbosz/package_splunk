@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>splunk</id>
+    <version>7.1.3</version>
+    <packageSourceUrl>https://download.splunk.com/products/splunk/releases/7.1.3/windows/</packageSourceUrl>
+    <owners>Ralf Bosz</owners>
+    <title>Splunk Enterprise</title>
+    <authors>Splunk Inc.</authors>
+    <projectUrl>https://www.splunk.com</projectUrl>
+    <iconUrl>https://www.splunk.com/content/dam/splunk2/images/logos/splunk-logo.svg</iconUrl>
+    <copyright>Splunk Inc.</copyright>
+    <licenseUrl>https://www.splunk.com/en_us/legal/terms/terms-of-use.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <tags>splunk</tags>
+    <summary>Splunk Enterprise Server</summary>
+    <description>Splunk Enterprise Server</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
