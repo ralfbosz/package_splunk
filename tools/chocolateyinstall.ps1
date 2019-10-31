@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://download.splunk.com/products/splunk/releases/7.1.3/windows/splunk-7.1.3-51d9cac7b837-x86-release.msi'
-$url64      = 'https://download.splunk.com/products/splunk/releases/7.1.3/windows/splunk-7.1.3-51d9cac7b837-x64-release.msi'
+$url        = 'https://download.splunk.com/products/splunk/releases/7.3.2/windows/splunk-7.3.2-c60db69f8e32-x86-release.msi'
+$url64      = 'https://download.splunk.com/products/splunk/releases/7.3.2/windows/splunk-7.3.2-c60db69f8e32-x64-release.msi'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -12,9 +12,9 @@ $packageArgs = @{
 
   softwareName  = 'Splunk Enterprise'
 
-  checksum      = '7d0704f7518fc8f787239461f3c97ab5776f0dcff660d08a6dc830814b2620fb'
+  checksum      = 'cbf2049fd935aa9232427dc9032e2248a62064289a6fa75d425a5227b4ad0ecc'
   checksumType  = 'sha256'
-  checksum64    = '7309941b59c2b6996b5ff2c58b3e0fbec2604f034baf1466a3c7369ea474f21e'
+  checksum64    = 'cbf2049fd935aa9232427dc9032e2248a62064289a6fa75d425a5227b4ad0ecc'
   checksumType64= 'sha256'
 
   silentArgs    = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`" AGREETOLICENSE=YES"
